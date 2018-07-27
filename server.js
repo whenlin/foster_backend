@@ -44,7 +44,7 @@ var port = 8080;
     var Review = require('./app/models/Review');
     
     app.post('/addBar', function(req,res,next){         //adds a bar to the bar database
-        console.log(req.body);
+      //  console.log(req.body);
         
         var data = new Bar();
         data.barName = req.body.barName;
@@ -111,14 +111,33 @@ var port = 8080;
                var array = [];
                
                for(i in Bars){
-                 //  console.log(i + Bars[i].barName);
                    array.push(Bars[i].barName);
                }
+               
+            array.sort(); //sorts the array alphabetically
                
             res.json({bars: array});
            
            }
        }); 
+    })
+    
+    .put('/bars/:Bar_id',function(req, res, next){ //updates the specified bar's info , THE CODE IN THIS ROUTE ONLY UPDATES THE BARS NAME
+        Bar.findById(req.params.Bar_id, function(err, Bar) {
+
+			if (err)
+				console.log(err);
+
+			Bar.barName = req.body.name;
+			
+			Bar.save(function(err) {
+				if (err)
+					console.log(err);
+
+				res.json({ message: 'Bar info updated!' });
+			});
+
+		});
     })
     
     .get('/londonBars', function(req, res, next){ //gets bars in london, ontario
@@ -152,7 +171,14 @@ var port = 8080;
     })
     
     .delete('/bars/:barName', function(req,res,next){ //deletes specified bar
-        
+        Bar.remove({
+			barName: req.params.barName
+		}, function(err, bar) {
+			if (err)
+				console.log(err);
+
+			res.json({ deleted: bar });
+		});
     })
     
     .get('/reviews', function(req, res, next){      //gets all reviews 
