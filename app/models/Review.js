@@ -4,7 +4,6 @@ var Schema = mongoose.Schema;
 var ReviewSchema = new Schema({
     barName: String,
     personName: String,
-    personAge: String,
     school: String,
     likes: String,
     message: String

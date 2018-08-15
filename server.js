@@ -84,14 +84,14 @@ var port = 8080;
         
         var data = new Review();
         data.barName = req.body.barName;
-        data.barRating = req.body.rating;
+        data.personName= req.body.personName;
         data.message = req.body.review;
+        data.school =  req.body.school;
         
         data.save(function(err){
            if(err) throw err;
            else{
                res.json({Review: data});
-               console.log('SUCCESS!');
            }
         });
         
@@ -189,14 +189,27 @@ var port = 8080;
        }); 
     })
     
-    .get('/reviews/:barName', function(req, res, next){     //gets all reviews for the specified bar
+    .get('/reviews/:barName', function(req, res, next){     //gets 3 reviews for the specified bar
          Review.find({ barName: req.params.barName }, function(err, Review){
+             console.log("reviews..");
             if(err){ 
                 res.send(err);
                 throw err;
             }
             else
-                res.json(Review);
+                res.json({reviews: Review});
+            
+        }).limit(3);
+    })
+    
+    .get('/allReviews/:barName', function(req, res, next){ //gets ALL reviews for the specified bar
+        Review.find({ barName: req.params.barName }, function(err, Review){
+            if(err){ 
+                res.send(err);
+                throw err;
+            }
+            else
+                res.json({reviews: Review});
             
         });
     })
