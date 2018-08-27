@@ -42,6 +42,7 @@ var port = 8080;
 
     var Bar = require('./app/models/Bar');
     var Review = require('./app/models/Review');
+    var Rating = require('./app/models/Ratings');
     
     app.post('/addBar', function(req,res,next){         //adds a bar to the bar database
       //  console.log(req.body);
@@ -85,27 +86,28 @@ var port = 8080;
         var data = new Review();
         data.barName = req.body.barName;
         data.personName= req.body.personName;
-        data.message = req.body.review;
-        data.school =  req.body.school;
+        data.message = req.body.message;
+        data.school =  req.body.institution;
         
         data.save(function(err){
            if(err) throw err;
            else{
-               res.json({Review: data});
+               console.log({Review: data});
+               res.send("SUCCESS!!!!");
            }
         });
         
         
     });
 
-    app.get('/bars', function(req, res, next){      //gets all bars in database
+    app.get('/bars', function(req, res, next){              //gets all bars in database
     console.log("All bar info is being requested...");
     
        Bar.find(function(err, Bars){
            if(err){ 
                console.log(err);
                throw err;
-           }
+           }                                                    //CURRENTLY RETURNS THE BAR NAMES ONLY
            else{
                
                var array = [];
@@ -122,7 +124,7 @@ var port = 8080;
        }); 
     })
     
-    .put('/bars/:Bar_id',function(req, res, next){ //updates the specified bar's info , THE CODE IN THIS ROUTE ONLY UPDATES THE BARS NAME
+    .put('/bars/:Bar_id',function(req, res, next){ //updates the specified bar's info , THE CODE IN THIS ROUTE CURRENTLY UPDATES THE BARS NAME
         Bar.findById(req.params.Bar_id, function(err, Bar) {
 
 			if (err)
@@ -181,6 +183,27 @@ var port = 8080;
 		});
     })
     
+    .post('/ratings', function(req, res, next){
+        
+        var data =  new Rating();
+        data.barName = req.body.barName;
+        data.waitTime = req.body.waitTime;
+        data.drinks = req.body.drinks;
+        data.washrooms = req.body.washrooms;
+        data.music = req.body.music;
+        
+        data.save(function(err){
+          if(err) {
+              console.log(err);
+              throw err;
+          }
+          else{
+              console.log("Ratings successfully added!");
+              res.json({Ratings: data});
+          }
+        });
+    })
+    
     .get('/reviews', function(req, res, next){      //gets all reviews 
         Review.find(function(err, Reviews){
            if(err) throw err;
@@ -195,6 +218,8 @@ var port = 8080;
             if(err){ 
                 res.send(err);
                 throw err;
+            } else if (Review.length == 0){
+                
             }
             else
                 res.json({reviews: Review});

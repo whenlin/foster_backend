@@ -2,7 +2,11 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var RatingSchema = new Schema({
-    //will implement more later
+    barName: String,
+    waitTime: String,
+    drinks: String,
+    washrooms: String,
+    music: String
 }); 
 
 var Rating = mongoose.model('Rating', RatingSchema);
