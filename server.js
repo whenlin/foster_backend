@@ -185,7 +185,7 @@ var port = 8080;
     
     .post('/ratings', function(req, res, next){
         
-        var data =  new Rating();
+        var data =  new Rating();                   //saves ratings for the bars to the database
         data.barName = req.body.barName;
         data.waitTime = req.body.waitTime;
         data.drinks = req.body.drinks;
@@ -198,9 +198,62 @@ var port = 8080;
               throw err;
           }
           else{
-              console.log("Ratings successfully added!");
+              console.log("Ratings for " + data.barName + " were successfully added!");
               res.json({Ratings: data});
           }
+        });
+    })
+    
+    .get('/ratings/:barName', function(req, res, next){
+        Rating.find({ barName: req.params.barName }, function(err, Ratings){
+            console.log("Ratings requested");
+            if(err){
+                console.log(err);
+                throw err;
+            } else {
+                var waitSum = 0.0; var drinksSum = 0.0; var washroomsSum = 0.0; var musicSum = 0.0; 
+                var waitAvg = 0.0; var drinkAvg = 0.0; var washroomsAvg = 0.0; var musicAvg = 0.0; var overallAvg = 0.0;
+                
+              //  console.log(Ratings);
+                for(i in Ratings){
+                    
+                    waitSum += parseInt(Ratings[i].waitTime);
+                    drinksSum += parseInt(Ratings[i].drinks);
+                    washroomsSum += parseInt(Ratings[i].washrooms);
+                    musicSum += parseInt(Ratings[i].music);
+                }
+                
+                var length = 0.0;
+                 length = Ratings.length;
+               
+                
+                waitAvg = waitSum / length;
+                drinkAvg = drinksSum / length;
+                washroomsAvg = washroomsSum / length;
+                musicAvg = musicSum / length;
+                
+                overallAvg = (waitAvg + drinkAvg + washroomsAvg + musicAvg) / 4.0;
+                overallAvg = Math.round(overallAvg * 10) / 10;
+                
+                var overall = overallAvg.toString();
+                var wait = waitAvg.toString();
+                var drink = drinkAvg.toString();
+                var washrooms = washroomsAvg.toString();
+                var music = musicAvg.toString();
+                
+                var ratings_json = {
+                    "overallAvg": overall,
+                    "waitAvg": wait,
+                    "drinkAvg": drink,
+                    "washroomsAvg": washrooms,
+                    "musicAvg": music
+                };
+                
+                var array = [ratings_json]; //array containing json data
+                
+                res.json({ratings: array});
+                
+            }
         });
     })
     
