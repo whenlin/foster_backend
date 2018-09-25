@@ -301,17 +301,17 @@ var port = 8080;
             else
                 res.json({Deleted: Review});
         });
+    })
+    
+    .delete('/allReviews/:_id', function(req, res, next){
+        Review.remove({ _id: req.params._id }, function(err, Review){
+            if(err){
+                console.log(err);
+            }else{
+                res.json({Deleted: Review});
+            }
+        });
     });
-    
-function calculateAvgRating(array){
-    var sum = 0.0;
-    for(i in array){
-        sum = sum + array[i];
-    }
-    var num = array.length;
-    
-    return sum/num;
-}
 
 app.listen(port, function() 
 {
