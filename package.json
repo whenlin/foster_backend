@@ -3,7 +3,7 @@
   "version": "1.0",
   "description": "Nightlife review app",
   "main": "server.js",
-  "repository": "",
+  "repository": "https://github.com/whenlin/foster_backend.git",
   "author": "William Henlin <whenlin45@gmail.com>",
   "dependencies": {
     "async": "~0.2.8",
