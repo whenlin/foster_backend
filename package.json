@@ -11,8 +11,6 @@
     "cors": "^2.8.4",
     "express": "^3.2.6",
     "mongodb": "^3.0.10",
-    "mongoose": "^5.1.5",
-    "mysql": "^2.15.0",
-    "socket.io": "~0.9.14"
+    "mongoose": "^5.1.5"
   }
 }
