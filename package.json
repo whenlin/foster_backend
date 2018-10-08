@@ -1,10 +1,10 @@
 {
-  "name": "chat-example",
-  "version": "0.0.0",
-  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "name": "Foster",
+  "version": "1.0",
+  "description": "Nightlife review app",
   "main": "server.js",
   "repository": "",
-  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "author": "William Henlin <whenlin45@gmail.com>",
   "dependencies": {
     "async": "~0.2.8",
     "body-parser": "^1.18.3",
