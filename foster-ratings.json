@@ -1,0 +1,47 @@
+{ "_id" : { "$oid" : "5b84a488b6f04846b36339df" }, "barName" : "Jack's", "waitTime" : "1", "drinks" : "4", "washrooms" : "4", "music" : "2", "__v" : 0 }
+{ "_id" : { "$oid" : "5b84a4d4afc2e4488410ee87" }, "barName" : "Jack's", "waitTime" : "3", "drinks" : "2", "washrooms" : "5", "music" : "0", "__v" : 0 }
+{ "_id" : { "$oid" : "5b84a4dcafc2e4488410ee88" }, "barName" : "Jack's", "waitTime" : "1", "drinks" : "1", "washrooms" : "3", "music" : "2", "__v" : 0 }
+{ "_id" : { "$oid" : "5b84a4e5afc2e4488410ee89" }, "barName" : "Jack's", "waitTime" : "0", "drinks" : "4", "washrooms" : "5", "music" : "4", "__v" : 0 }
+{ "_id" : { "$oid" : "5b84a4ebafc2e4488410ee8a" }, "barName" : "Jack's", "waitTime" : "3", "drinks" : "4", "washrooms" : "2", "music" : "4", "__v" : 0 }
+{ "_id" : { "$oid" : "5b84a4f2afc2e4488410ee8b" }, "barName" : "Jack's", "waitTime" : "5", "drinks" : "5", "washrooms" : "5", "music" : "5", "__v" : 0 }
+{ "_id" : { "$oid" : "5b84a4fbafc2e4488410ee8c" }, "barName" : "Jack's", "waitTime" : "3", "drinks" : "4", "washrooms" : "1", "music" : "2", "__v" : 0 }
+{ "_id" : { "$oid" : "5b85f4fed3ce481579eb88b3" }, "barName" : "Jack's", "waitTime" : "3", "drinks" : "4", "washrooms" : "1", "music" : "2", "__v" : 0 }
+{ "_id" : { "$oid" : "5b875f8c4de4920a5e39187f" }, "barName" : "Barney's", "waitTime" : "3", "drinks" : "4", "washrooms" : "1", "music" : "2", "__v" : 0 }
+{ "_id" : { "$oid" : "5b875f9b4de4920a5e391880" }, "barName" : "Barney's", "waitTime" : "5", "drinks" : "1", "washrooms" : "5", "music" : "1", "__v" : 0 }
+{ "_id" : { "$oid" : "5b875fad4de4920a5e391881" }, "barName" : "Beertown Public House", "waitTime" : "5", "drinks" : "3", "washrooms" : "5", "music" : "3", "__v" : 0 }
+{ "_id" : { "$oid" : "5b875fbf4de4920a5e391882" }, "barName" : "Chaucer's Pub", "waitTime" : "4", "drinks" : "3", "washrooms" : "2", "music" : "1", "__v" : 0 }
+{ "_id" : { "$oid" : "5b875fcf4de4920a5e391883" }, "barName" : "Cowboy's Ranch", "waitTime" : "1", "drinks" : "1", "washrooms" : "1", "music" : "1", "__v" : 0 }
+{ "_id" : { "$oid" : "5b875fd64de4920a5e391884" }, "barName" : "Cowboy's Ranch", "waitTime" : "5", "drinks" : "5", "washrooms" : "5", "music" : "5", "__v" : 0 }
+{ "_id" : { "$oid" : "5b875fde4de4920a5e391885" }, "barName" : "Fox and Fiddle", "waitTime" : "5", "drinks" : "5", "washrooms" : "5", "music" : "5", "__v" : 0 }
+{ "_id" : { "$oid" : "5b875fe54de4920a5e391886" }, "barName" : "Fox and Fiddle", "waitTime" : "3", "drinks" : "2", "washrooms" : "5", "music" : "4", "__v" : 0 }
+{ "_id" : { "$oid" : "5b875fef4de4920a5e391887" }, "barName" : "Frogs", "waitTime" : "3", "drinks" : "2", "washrooms" : "5", "music" : "4", "__v" : 0 }
+{ "_id" : { "$oid" : "5b875ff54de4920a5e391888" }, "barName" : "Frogs", "waitTime" : "5", "drinks" : "3", "washrooms" : "5", "music" : "1", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8760054de4920a5e391889" }, "barName" : "Joe Kool's", "waitTime" : "1", "drinks" : "4", "washrooms" : "2", "music" : "3", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8760164de4920a5e39188a" }, "barName" : "London Ale House", "waitTime" : "4", "drinks" : "1", "washrooms" : "5", "music" : "0", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8760214de4920a5e39188b" }, "barName" : "London Ale House", "waitTime" : "4", "drinks" : "1", "washrooms" : "5", "music" : "4", "__v" : 0 }
+{ "_id" : { "$oid" : "5b87602c4de4920a5e39188c" }, "barName" : "Molly Bloom's Irish Pub", "waitTime" : "4", "drinks" : "1", "washrooms" : "5", "music" : "4", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8760334de4920a5e39188d" }, "barName" : "Molly Bloom's Irish Pub", "waitTime" : "1", "drinks" : "2", "washrooms" : "3", "music" : "5", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8760704de4920a5e39188e" }, "barName" : "Oar House", "waitTime" : "5", "drinks" : "3", "washrooms" : "2", "music" : "1", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8760724de4920a5e39188f" }, "barName" : "Oar House", "waitTime" : "5", "drinks" : "2", "washrooms" : "2", "music" : "1", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8760774de4920a5e391890" }, "barName" : "Oar House", "waitTime" : "2", "drinks" : "4", "washrooms" : "2", "music" : "1", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8760b14de4920a5e391891" }, "barName" : "Poacher's Arm", "waitTime" : "2", "drinks" : "4", "washrooms" : "2", "music" : "1", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8760bb4de4920a5e391892" }, "barName" : "Poacher's Arm", "waitTime" : "5", "drinks" : "5", "washrooms" : "2", "music" : "4", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8760cb4de4920a5e391893" }, "barName" : "Scot's Corner", "waitTime" : "2", "drinks" : "3", "washrooms" : "1", "music" : "5", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8760e24de4920a5e391894" }, "barName" : "The Ceeps", "waitTime" : "5", "drinks" : "4", "washrooms" : "1", "music" : "2", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8760ed4de4920a5e391895" }, "barName" : "The Ceeps", "waitTime" : "0", "drinks" : "4", "washrooms" : "3", "music" : "4", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8760f64de4920a5e391896" }, "barName" : "The Ceeps", "waitTime" : "4", "drinks" : "5", "washrooms" : "2", "music" : "1", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8761204de4920a5e391897" }, "barName" : "The Morissey House", "waitTime" : "5", "drinks" : "2", "washrooms" : "5", "music" : "1", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8761274de4920a5e391898" }, "barName" : "The Morissey House", "waitTime" : "3", "drinks" : "2", "washrooms" : "2", "music" : "4", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8761514de4920a5e391899" }, "barName" : "The Runt Club", "waitTime" : "0", "drinks" : "1", "washrooms" : "5", "music" : "3", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8761564de4920a5e39189a" }, "barName" : "The Runt Club", "waitTime" : "4", "drinks" : "1", "washrooms" : "3", "music" : "3", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8761684de4920a5e39189b" }, "barName" : "The Tasting Room", "waitTime" : "5", "drinks" : "2", "washrooms" : "4", "music" : "1", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8761794de4920a5e39189c" }, "barName" : "Warehouse London", "waitTime" : "5", "drinks" : "5", "washrooms" : "2", "music" : "5", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8761824de4920a5e39189d" }, "barName" : "Warehouse London", "waitTime" : "2", "drinks" : "1", "washrooms" : "5", "music" : "5", "__v" : 0 }
+{ "_id" : { "$oid" : "5b87618a4de4920a5e39189e" }, "barName" : "Warehouse London", "waitTime" : "4", "drinks" : "3", "washrooms" : "3", "music" : "2", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8761b34de4920a5e39189f" }, "barName" : "Wink's Eatery", "waitTime" : "4", "drinks" : "3", "washrooms" : "3", "music" : "2", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8761bd4de4920a5e3918a0" }, "barName" : "Wink's Eatery", "waitTime" : "2", "drinks" : "4", "washrooms" : "5", "music" : "4", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8761c24de4920a5e3918a1" }, "barName" : "Wink's Eatery", "waitTime" : "5", "drinks" : "2", "washrooms" : "5", "music" : "3", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8761c64de4920a5e3918a2" }, "barName" : "Wink's Eatery", "waitTime" : "5", "drinks" : "2", "washrooms" : "1", "music" : "3", "__v" : 0 }
+{ "_id" : { "$oid" : "5b8761d24de4920a5e3918a3" }, "barName" : "Wink's Eatery", "waitTime" : "4", "drinks" : "5", "washrooms" : "4", "music" : "1", "__v" : 0 }
+{ "_id" : { "$oid" : "5b88d7c4890a15124d4aac85" }, "barName" : "Joe Kool's", "waitTime" : "5.000000", "drinks" : "4.000000", "washrooms" : "2.000000", "music" : "4.000000", "__v" : 0 }
+{ "_id" : { "$oid" : "5ba853c18ba0fb0ac649d7dd" }, "barName" : "Jack's", "waitTime" : "2.000000", "drinks" : "5.000000", "washrooms" : "2.718282", "music" : "3.000000", "__v" : 0 }
