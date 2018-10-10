@@ -303,6 +303,17 @@ var port = 8080;
         });
     })
     
+    .delete('/ratings/:barName', function(req, res, next){
+        Rating.remove({ barName: req.params.barName }, function(err, Rating){
+            if(err){
+                console.log(err);
+                res.send(err);
+            }else{
+                res.json({ Deleted: Rating });
+            }
+        });
+    })
+    
     .delete('/allReviews/:_id', function(req, res, next){
         Review.remove({ _id: req.params._id }, function(err, Review){
             if(err){
