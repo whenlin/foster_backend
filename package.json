@@ -1,6 +1,6 @@
 {
   "name": "Foster",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Nightlife review app",
   "main": "server.js",
   "repository": "https://github.com/whenlin/foster_backend.git",
